@@ -27,7 +27,7 @@ main {
   grid-column: 1 / 4;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
   column-gap: 2rem;
 }
@@ -125,5 +125,5 @@ h1 {
 }
 
 #lastModified {
-  color: yellow;
+  color: black;
 }
