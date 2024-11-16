@@ -1,0 +1,24 @@
+@media screen and (min-width: 720px) {
+  .hamburger-icon {
+    display: none !important;
+  }
+  .hamburger-close {
+    display: none !important;
+  }
+  .navigation-menu {
+    display: flex !important;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
