@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="WDD 131 - Dynamic Web Fundamentals - Pica Nievas, development of a HTML, CSS and Javascript site">
+  <meta name="author" content="Pica Nievas">
+  <link rel="stylesheet" href="styles/place.css">
+  <title>Place</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900"
+    rel="stylesheet">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>
+      Puerto Rico
+    </h1>
+  </header>
+
+  <main>
+    <picture id="background-image">
+      <!-- srcset for different screen sizes -->
+      <source srcset="images/pr-hero-large.webp" alt="Large" media="(min-width: 1200px)">
+      <source srcset="images/pr-hero-medium.webp" alt="Medium" media="(min-width: 768px)">
+      <img src="images/pr-hero-small.webp" alt="Puerto Rico" id="hero-image">
+    </picture>
+    <aside class="databox">
+      <h2>Data</h2>
+      <ul>
+        <li><label>Area:</label>
+          <div>5,325 sq miles</div>
+        </li>
+        <li><label>Population:</label>
+          <div>3,206,000</div>
+        </li>
+        <li><label>Captial:</label>
+          <div>San Juan</div>
+        </li>
+        <li><label>Languages:</label>
+          <div>Spanish, English</div>
+        </li>
+        <li><label>Currency:</label>
+          <div>USD Dollar</div>
+        </li>
+        <li><label>Time Zone:</label>
+          <div>GMT-4</div>
+        </li>
+        <li><label>Calling Code:</label>
+          <div>+1</div>
+        </li>
+        <li><label>Internet TLD:</label>
+          <div>.pr</div>
+        </li>
+      </ul>
+    </aside>
+    <div class="main-content"></div>
+    <aside class="weatherbox">
+      <h2>Weather</h2>
+      <img src="images/weather-icon.svg" alt="weather icon" id="weather-icon">
+      <ul>
+        <li><label>Temperature:</label>
+          <div>83</div>
+        </li>
+        <li><label>Conditions:</label>
+          <div>U+2600</div>
+        </li>
+        <li><label>Wind:</label>
+          <div>4 mph</div>
+        </li>
+        <li><label>Wind Chill:</label>
+          <div>81</div>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> 🌺 Pica Nievas 🌺 Austin Texas
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>
