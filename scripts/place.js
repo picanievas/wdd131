@@ -4,40 +4,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 // Function to update the current year and last modified date in the footer
 document.addEventListener("DOMContentLoaded", function () {
-  // Get the current year and last modified date
-  const currentYear = new Date().getFullYear();
-  const lastModified = document.lastModified;
+  // Check if the conditions are suitable for windchill calculation
+  const temperature = 83;
+  const windSpeed = 4;
+  let windchillFactor = "N/A";
 
-  // Display the current year in the footer
-  document.getElementById("currentYear").textContent = currentYear;
+  if (temperature <= 50 && windSpeed > 3) {
+    // Call the function to calculate windchill and display it
+    windchillFactor = calculateWindChill(temperature, windSpeed);
+  }
 
-  // Display the last modified date in the footer
-  document.getElementById("lastModified").textContent = lastModified;
-
-  // Static values for temperature and wind speed (You can replace these with dynamic values later)
-  const temperatureC = 5; // Temperature in °C
-  const windSpeedKmh = 10; // Wind speed in km/h
-
-  // Call the function to calculate windchill and display it
-  const windchillFactor = calculateWindChill(temperatureC, windSpeedKmh);
   document.getElementById("windchill").textContent = windchillFactor;
 });
 
 // Function to calculate windchill based on temperature and wind speed
 function calculateWindChill(temperature, windSpeed) {
-  // Check if the conditions are suitable for windchill calculation
-  if (temperature <= 10 && windSpeed > 4.8) {
-    // Wind chill formula (Celsius and km/h)
-    return (
-      Math.round(
-        13.12 +
-          0.6215 * temperature -
-          11.37 * Math.pow(windSpeed, 0.16) +
-          0.3965 * temperature * Math.pow(windSpeed, 0.16)
-      ) + "°C"
-    );
-  } else {
-    // If conditions are not met, return "N/A"
-    return "N/A";
-  }
+  // Wind chill formula (Farenheit and mph)
+  return (
+    Math.round(
+      35.74 +
+        0.6215 * temperature -
+        37.75 * Math.pow(windSpeed, 0.16) +
+        0.4275 * temperature * Math.pow(windSpeed, 0.16)
+    ) + "°F"
+  );
 }
