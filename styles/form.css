@@ -1,0 +1,122 @@
+:root {
+  --blue-color: rgb(41, 41, 140);
+  --red-color: rgb(159, 40, 40);
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--blue-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--blue-color);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+form {
+  margin: 0 auto;
+}
+
+div.fieldbox {
+  background: rgb(229, 229, 229);
+  padding: 1rem;
+  margin: 1rem;
+}
+div.fieldbox label {
+}
+div.fieldbox select {
+  padding: 0.5rem;
+}
+
+div.fieldbox span {
+  font-style: italic;
+}
+
+div.fieldbox button {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.radioratings {
+  display: flex;
+  justify-content: space-between;
+}
+.radioratings li {
+  width: 100%;
+  text-align: center;
+}
+.radioratings label {
+  display: block;
+}
+
+div.fieldbox textarea {
+  display: block;
+  width: 100%;
+  height: 6rem;
+  padding: 0.5rem;
+}
+
+div.fieldbox input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+#product-installation-date {
+  padding: 0.5rem;
+}
+
+div.fieldbox ul,
+div.fieldbox ol {
+  list-style-type: none;
+}
+
+#reviewbox {
+  margin: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main section {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main section {
+    width: 60%;
+  }
+}

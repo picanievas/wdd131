@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Site Project Best Board Games- Pica Nievas</title>
+  <meta name="description" content="WDD 131 - Site Project - Pica Nievas, Board Games">
+  <meta name="author" content="Pica Nievas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/filtered-games.css" />
+  <link rel="stylesheet" href="./styles/wonderlandswar.css" />
+  <script src="./scripts/sitemenu.js" defer></script>
+  <script src="./scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1 class="title">Best Board Games</h1>
+    <div class="navigation">
+      <img width="48" height="48" class="hamburger-icon" src="./images/hamburger-menu.png" alt="Mobile menu icon" />
+      <nav class="navigation-menu">
+        <img width="48" height="48" class="hamburger-close hide" src="./images/close.png"
+          alt="Mobile close menu icon" />
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>
+      Wonderlands War by Druid Games
+    </h2>
+    <div class="mainbox">
+      <picture id="wonderland-background-image">
+        <!-- srcset for different screen sizes -->
+        <source srcset="./images/wonwar-hero-large.jpg" media="(min-width: 1200px)">
+        <source srcset="./images/wonwar-hero-medium.jpg" media="(min-width: 768px)">
+        <img src="./images/wonwar-hero-small.jpg" alt="Wonderlands War" id="hero-image">
+      </picture>
+
+      <aside class="databox">
+        <h2>Pica's Take on Wonderlands War</h2>
+        <ul>
+          <li><label>Complexity:</label>
+            <div>3 out of 5</div>
+          </li>
+          <li><label>Best Wonderlandian:</label>
+            <div>Knave of Hearts</div>
+          </li>
+          <li><label>Favorite Charater to Play:</label>
+            <div>Mad Hatter</div>
+          </li>
+          <li><label>Cost:</label>
+            <div>$140 USD Dollar</div>
+          </li>
+          <li><label>What is the game about?</label>
+            <div>Wonderland's War combines the competition of area control with a whimsical and brilliant bag-building
+              combat system.</div>
+          </li>
+
+        </ul>
+      </aside>
+      <div class="main-content"></div>
+      <aside class="detailsbox">
+        <h2>Wonderland Wars Details</h2>
+        <img src="./images/games/wonwarmeep-removebg-preview.png" alt="meeple-icon" id="meeple-icon">
+        <ul>
+          <li><label>Complexity:</label>
+            <div>3 out of 5</div>
+          </li>
+          <li><label>Approx Play Time:</label>
+            <div>45-125 mins</div>
+          </li>
+          <li><label>Number of Players:</label>
+            <div>2-5 players</div>
+          </li>
+          <li><label>Plays Best With:</label>
+            <div> 4</div>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> 🌺 Pica Nievas 🌺 Austin Texas
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+
+</html>

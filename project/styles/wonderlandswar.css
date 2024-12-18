@@ -1,0 +1,183 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-right: 15px;
+}
+
+/* Hero Section with Responsive Image */
+#hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+#background-image {
+  z-index: 1;
+  display: block;
+  position: relative;
+  height: auto;
+}
+
+#meeple-icon {
+  width: 4rem;
+}
+
+/* Main Content Section */
+main {
+  position: relative;
+  width: 100%;
+  padding-bottom: 8rem;
+}
+h2:not(aside h2) {
+  position: relative;
+  z-index: 3;
+  background-color: purple;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+#hero-image {
+  width: 100%;
+  border-bottom: var(--red-color) 4px solid;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+/* Sidebar Styles */
+aside {
+  background-color: #f4f4f4;
+  padding: 15px;
+  margin-top: 20px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  height: auto;
+}
+
+aside ul li {
+  display: flex;
+  justify-content: center;
+}
+
+aside ul li label {
+  width: 50%;
+  text-align: right;
+  font-weight: bold;
+}
+
+aside ul li div {
+  width: 50%;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  main div.mainbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main section {
+    width: 70%;
+  }
+
+  .main-section {
+    width: 40%;
+  }
+
+  #hero-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #background-image {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+  }
+
+  aside {
+    width: 550px;
+    margin: 1.5rem;
+  }
+
+  aside h2 {
+    background: purple;
+    color: white;
+    position: relative;
+    margin-left: -20px;
+    padding: 1rem;
+    display: flex;
+  }
+  #meeple-icon {
+    display: none;
+    height: 10px;
+    width: 15px;
+  }
+
+  .detailsbox {
+    margin-bottom: 2rem;
+  }
+  h2:not(aside h2) {
+    width: auto; /* Ensure the h2 element doesn't stretch */
+    max-width: 80%; /* Set a maximum width for the h2 elements */
+    margin: 0 auto; /* Center the h2 horizontally */
+    padding: 1rem; /* Keep padding consistent */
+    text-align: center; /* Center the text inside the h2 */
+  }
+}
+
+@media (min-width: 1200px) {
+  main div.mainbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  main section {
+    width: 60%;
+  }
+  h2:not(aside h2) {
+    z-index: 3;
+    background-color: purple;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+  }
+}

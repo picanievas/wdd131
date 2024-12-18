@@ -1,0 +1,121 @@
+body,
+html {
+  margin: 0;
+  font-size: 16px;
+  font-family: Comfortaa, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background: lightpink;
+}
+
+header .title {
+  grid-column: 1 / 2;
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation-menu {
+  display: none;
+  justify-content: flex-end;
+  background: lightpink;
+  top: 0;
+  width: 100%;
+  flex-direction: column;
+  position: absolute;
+  z-index: 4;
+}
+
+.navigation-menu a {
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.navigation-menu a:hover {
+  background-color: wheat;
+}
+
+.hamburger-icon {
+  width: 48px;
+  height: 48px;
+  margin: 1rem;
+}
+
+.hamburger-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.page-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.games-grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.game-photo {
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.games-grid section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  border: 2px lightgray solid;
+  padding: 2rem;
+}
+
+.games-grid section img {
+  display: block;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+footer {
+  background: wheat;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 1;
+  margin-top: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+form {
+  background: red;
+}
+
+form input[type="number"] {
+  border: 2px solid green;
+}
+
+form button[type="submit"] {
+  background: blue;
+}
