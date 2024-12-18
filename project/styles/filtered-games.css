@@ -107,15 +107,3 @@ footer {
 .hide {
   display: none;
 }
-
-form {
-  background: red;
-}
-
-form input[type="number"] {
-  border: 2px solid green;
-}
-
-form button[type="submit"] {
-  background: blue;
-}
