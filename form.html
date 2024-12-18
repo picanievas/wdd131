@@ -25,11 +25,11 @@
   </header>
 
   <main>
-    <form id="reviewform" method="get" action="./review.html">
+    <form method="get" action="review.html" id="reviewform">
       <div class="fieldbox">
         <label for="product-name">Product Name</label>
         <select id="product-name" name="product_name" required>
-          <option disabled selected>Select a Product ...</option>
+          <option disabled selected value="">Select a Product ...</option>
         </select>
       </div>
 
@@ -95,7 +95,7 @@
       </div>
 
       <div class="fieldbox">
-        <button id="submit" type="submit" value="submit">Post Review</textarea>
+        <button id="submit" type="submit" value="submit">Post Review</button>
       </div>
     </form>
   </main>
